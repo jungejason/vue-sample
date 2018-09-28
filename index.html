@@ -1,11 +1,16 @@
 <html>
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<div id="card">
-  <header>{{ title }}</header>
-  <div> {{ content }} </div>
-</div>
+<body>
+  <div id="card">
+    <header>{{ title }}</header>
+    <div v-html="content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 
 </html>
